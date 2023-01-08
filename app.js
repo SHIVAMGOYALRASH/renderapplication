@@ -8,6 +8,12 @@ app.get('/', (request, response) => {
         message: 'Ok'
     });
 });
+app.get('/DATA', (request, response) => {
+    response.send({
+        status: 200,
+        message: 'DATA'
+    });
+});
 
 app.listen(PORT, (error)=>{
     if(error) console.log(error);
